@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { sample } from "../../utils";
 import { WORDS } from "../../data";
@@ -10,9 +10,11 @@ const answer = sample(WORDS);
 console.info({ answer });
 
 function Game() {
+  const [guess, setGuess] = useState("");
+
   return (
     <>
-      <GuessInput />
+      <GuessInput guess={guess} setGuess={setGuess} />
     </>
   );
 }
