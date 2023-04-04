@@ -46,6 +46,9 @@ function Keyboard({ guesses, answer }) {
     return className;
   }
 
+  // Q. rename branch git
+  // A. git branch -m oldName newName
+
   return (
     <div className="keyboard">
       {qwertyLetters.map((row, rowIndex) => (
